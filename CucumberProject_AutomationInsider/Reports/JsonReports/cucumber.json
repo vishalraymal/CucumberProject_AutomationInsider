@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-15T18:55:59.977Z",
+        "line": 3,
+        "name": "Test the valid login",
+        "description": "",
+        "id": "test-the-login-functionality-of-orangehrm;test-the-valid-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12600870300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on loginPage",
+            "match": {
+              "location": "com.stepDefination.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 276498000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters username and password",
+            "match": {
+              "location": "com.stepDefination.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5135943000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on login button",
+            "match": {
+              "location": "com.stepDefination.LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 365086400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should land on home page",
+            "match": {
+              "location": "com.stepDefination.LoginSteps.user_should_land_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test the login functionality of OrangeHRM",
+    "description": "",
+    "id": "test-the-login-functionality-of-orangehrm",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginFeature.feature",
+    "tags": []
+  }
+]
