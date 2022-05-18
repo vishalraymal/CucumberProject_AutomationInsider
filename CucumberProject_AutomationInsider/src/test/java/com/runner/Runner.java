@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 				plugin= {"html:Reports\\HTMLReports", "json:Reports\\JsonReports\\cucumber.json",
 						"junit:Reports\\JunitReports\\cucumber.xml"},
 				dryRun=false,
-				strict=false
+				strict=false,
+				tags= {"@FunctionalTest"}
 				)
 
 
