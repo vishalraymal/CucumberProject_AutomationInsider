@@ -24,11 +24,11 @@ public class LoginSteps {
 		
 	}
 
-	@When("user enters username and password")
-	public void user_enters_username_and_password() {
+	@When("user enters (.*) and (.*)$")
+	public void user_enters_username_and_password(String uname, String pswd) {
 		System.out.println("STEP 2 : Enter username and password");
-	    driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("admin");
-	    driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
+	    driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys(uname);
+	    driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(pswd);
 	}
 
 	@And("click on login button")
